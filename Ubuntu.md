@@ -49,3 +49,10 @@ Waylandを無効にすると解決するかも
 
 	   sudo systemctl restart smbd nmbd
 
+### ssh
+
+【手順】
+1. sshサーバをインストール
+
+	   sudo apt install openssh-server
+
