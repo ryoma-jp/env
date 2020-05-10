@@ -1,5 +1,18 @@
 # Ubuntu関連のメモ
 
+## 20.04 LTS
+
+### キーボードマップ設定
+
+参考：https://qiita.com/vochicong/items/6452ac54bde56b0e0bb3
+
+gnome-session-properties
+
+Add → setxkbmap jp → Save
+
+Name: SetJP keyboard on X startup
+Command: setxkbmap jp
+
 ## 18.04 LTS
 
 ### ログイン画面が表示されない
