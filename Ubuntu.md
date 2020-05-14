@@ -10,9 +10,11 @@ gnome-session-properties
 
 Add → setxkbmap jp → Save
 
-Name: SetJP keyboard on X startup
-Command: setxkbmap jp
+Name: SetJP keyboard on X startup  
+Command: setxkbmap jp  
 
+ setxkbmap jp  
+ 
 ## 18.04 LTS
 
 ### ログイン画面が表示されない
