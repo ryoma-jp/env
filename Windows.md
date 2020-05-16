@@ -19,3 +19,29 @@
 
 ## TeX
 
+### インストール
+
+1. texlive2020.isoをダウンロード（ http://www.tug.org/texlive/acquire-iso.html ）  
+1. ダウンロードしたisoファイルをマウントしてinstall-tl-windows.batを実行
+
+参考：  
+https://texwiki.texjp.org/?TeX%20Live
+
+### 使い方
+
+1. TeXworks editorを開く
+1. 適当に文書を作る
+	<pre>
+	\documentclass{article}
+	\begin{document}
+	Hello, \TeX!
+	\end{document}
+	</pre>
+1. texファイルとして保存  
+1. コンパイル（▶）
+1. pdfファイルが生成されたら完了
+
+
+参考：  
+https://medemanabu.net/latex/windows-tex-live-texworks/
+
