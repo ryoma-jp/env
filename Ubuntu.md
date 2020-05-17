@@ -71,3 +71,15 @@ Waylandを無効にすると解決するかも
 
 	   sudo apt install openssh-server
 
+### 日本語入力
+
+【手順】  
+
+1. Japanese(Mozc)をインストール
+	
+		$ sudo apt install ibus-mozc  
+		$ ibus restart  
+		$ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'jp'), ('ibus', 'mozc-jp')]"  
+
+	
+2. 画面右上で，Japanese(Mozc)を選択  
