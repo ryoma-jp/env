@@ -22,10 +22,13 @@
 ### インストール
 
 1. texlive2020.isoをダウンロード（ http://www.tug.org/texlive/acquire-iso.html ）  
-1. ダウンロードしたisoファイルをマウントしてinstall-tl-windows.batを実行
+1. ダウンロードしたisoファイルをマウントしてinstall-tl-windows.batを実行  
+ここで，"untar failed"と表示されインストールに失敗したが，MinGWのxzが悪さをしていたようで，環境変数PATHからMinGWを削除してインストール成功した  
+MinGWをインストールしていないPCならスムーズにインストールできるはず
 
 参考：  
-https://texwiki.texjp.org/?TeX%20Live
+https://texwiki.texjp.org/?TeX%20Live  
+https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10
 
 ### 使い方
 
