@@ -103,3 +103,31 @@ Waylandを無効にすると解決するかも
 
 		$ docker run hello-world
 
+#### Docker imageをファイルに保存
+
+「$ docker save」，「$ docker load」で保存と読み込みができる
+
+		$ docker images
+		REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+		hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+
+		$ docker save hello-world -o hello-world.tar
+		$ file hello-world.tar 
+		hello-world.tar: POSIX tar archive
+
+		$ docker rmi hello-world
+		Untagged: hello-world:latest
+		Untagged: hello-world@sha256:6a65f928fb91fcfbc963f7aa6d57c8eeb426ad9a20c7ee045538ef34847f44f1
+		Deleted: sha256:bf756fb1ae65adf866bd8c456593cd24beb6a0a061dedf42b26a993176745f6b
+		Deleted: sha256:9c27e219663c25e0f28493790cc0b88bc973ba3b1686355f221c38a36978ac63
+		$ docker images
+		REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+		$
+
+		$ docker load -i hello-world.tar 
+		9c27e219663c: Loading layer  15.36kB/15.36kB
+		Loaded image: hello-world:latest
+		$ docker images
+		REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+		hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+
