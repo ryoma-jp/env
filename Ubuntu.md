@@ -83,3 +83,23 @@ Waylandを無効にすると解決するかも
 
 	
 2. 画面右上で，Japanese(Mozc)を選択  
+
+### Docker
+
+1. Docker install
+
+		$ sudo apt install docker.io
+
+2. ユーザをdockerグループに追加
+
+		$ sudo groupadd docker
+		$ sudo gpasswd -a $USER docker
+
+3. PC再起動  
+※ターミナル再起動やログアウトでは反映されなかった
+
+4. Hello world  
+※sudoなしで実行できればOK
+
+		$ docker run hello-world
+
