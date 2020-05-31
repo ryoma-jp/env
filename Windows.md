@@ -48,3 +48,11 @@ https://tex.stackexchange.com/questions/445086/error-installing-latest-version-o
 参考：  
 https://medemanabu.net/latex/windows-tex-live-texworks/
 
+## PlantUML
+
+テキストでUMLを書くのはPlantUMLがよさそう．  
+WindowsではVisual Studio Codeで環境設定するのがやりやすそう．
+
+参考：  
+https://qiita.com/hakaicode/items/98823e0ceab3f3f33cca  
+https://qiita.com/koara-local/items/e7a7a7d68a4f99a91ab1  
