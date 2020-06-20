@@ -118,7 +118,73 @@ Texの書き方のサンプルをまとめる
 
 
 \section{数式}
-...
+
+\subsection{数式}
+
+\begin{lstlisting}
+\begin{equation}
+	y = ax + b
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+	y = ax + b
+\end{equation}
+
+
+\subsection{数学記号}
+
+\begin{table} [ h ]
+\caption{等号}
+	\begin{center}
+	\begin{tabular}{| l | l | l || l | l | l |} \hline
+		記号 & コマンド & 意味 & 記号 & コマンド & 意味 \\ \hline
+		$=$ & = & イコール & $\neq$ & \verb|\|neq & ノットイコール \\ \hline
+		$\sim$ & \verb|\|sim & ニアリーイコール & $\simeq$ & \verb|\|simeq & ニアリーイコール \\ \hline
+		$\approx$ & \verb|\|approx & ニアリーイコール & $\fallingdotseq$ & \verb|\|fallingdotseq & ニアリーイコール \\ \hline
+		$\risingdotseq$ & \verb|\|risingdotseq & ニアリーイコール & $\equiv$ & \verb|\|equiv & 合同 \\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table} [ h ]
+\caption{不等号}
+	\begin{center}
+	\begin{tabular}{| l | l | l || l | l | l |} \hline
+		記号 & コマンド & 意味 & 記号 & コマンド & 意味 \\ \hline
+		$>$ & $>$ & 大なり & $<$ & $<$ & 小なり \\ \hline
+		$\geq$ & \verb|\|geq & 大なりイコール & $\geqq $ & \verb|\|geqq & 大なりイコール \\ \hline
+		$\leq$ & \verb|\|leq & 小なりイコール & $\leqq $ & \verb|\|leqq & 小なりイコール \\ \hline
+		$\gg$ & \verb|\|gg & 十分大きい & $\ll$ & \verb|\|ll & 十分小さい \\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table} [ h ]
+\caption{演算子}
+	\begin{center}
+	\begin{tabular}{| l | l | l || l | l | l |} \hline
+		記号 & コマンド & 意味 & 記号 & コマンド & 意味 \\ \hline
+		$+$ & $+$ & 和 & $-$ & $-$ & 差 \\ \hline
+		$\times$ & \verb|\|times & 積，外積 & $\cdot$ & \verb|\|cdot & 積，内積 \\ \hline
+		$\otimes$ & \verb|\|otimes & 直積　& $\div$ & \verb|\|div & 商 \\ \hline
+		$\pm$ & \verb|\|pm & プラスマイナス & $\mp$ & \verb|\|mp & マイナスプラス \\ \hline
+		$*$ & $*$ & 畳み込み &  &  &  \\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
+\begin{table} [ h ]
+\caption{アクセント}
+	\begin{center}
+	\begin{tabular}{| l | l | l || l | l | l |} \hline
+		記号 & コマンド & 意味 & 記号 & コマンド & 意味 \\ \hline
+		$\vec{a}$ & \verb|\|vec\{a\} & ベクトル & $\hat{a}$ & \verb|\|hat\{a\} & 推定値 \\ \hline
+		$\bar{a}$ & \verb|\|bar\{a\} & 平均 &  &  &  \\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
 
 \section{図表}
 
@@ -171,8 +237,10 @@ Texの書き方のサンプルをまとめる
 		Listings & \url{https://mytexpert.osdn.jp/index.php?Listings} \\
 		LaTeX入門/各種パッケージの利用 & \url{https://texwiki.texjp.org/?LaTeX入門%2F各種パッケージの利用} \\
 		LaTeXコマンド集 & \url{http://www.latex-cmd.com/} \\
+		LaTeX入門 & \url{https://medemanabu.net/latex/} \\
 		TeXテンプレート & \url{http://hooktail.org/computer/index.php?TeX%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8} \\
 		LaTeXで表のセル内改行はtabularx環境を使うと楽 & \url{https://tgnx8810.wordpress.com/2014/11/29/LaTeXで表のセル内改行はtabularx環境を使うと楽/} \\
+		数学記号の表 & \url{https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E8%A8%98%E5%8F%B7%E3%81%AE%E8%A1%A8} \\
 		\hline
 	\end{tabular}
 	\end{center}
