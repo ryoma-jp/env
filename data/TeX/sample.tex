@@ -3,6 +3,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{bm}
 \usepackage{graphicx}
+\usepackage{here}
 \usepackage{ascmac}
 \usepackage{listings}
 \usepackage{plistings}
@@ -131,6 +132,58 @@ Texの書き方のサンプルをまとめる
 	y = ax + b
 \end{equation}
 
+\subsection{maxやminの下に文字を入れる}
+
+\begin{lstlisting}
+\begin{equation}
+	\underset{a}{\rm b}
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+	\underset{a}{\rm b}
+\end{equation}
+
+\subsection{関数の書体}
+
+\subsubsection{通常の表示}
+
+\begin{lstlisting}
+\begin{equation}
+	f(x)
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+	f(x)
+\end{equation}
+
+
+\subsubsection{斜体のキャンセル}
+
+\begin{lstlisting}
+\begin{equation}
+	{\rm f}(x)
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+	{\rm f}(x)
+\end{equation}
+
+
+\subsubsection{イタリック}
+
+\begin{lstlisting}
+\begin{equation}
+	{\it f}(x)
+\end{equation}
+\end{lstlisting}
+
+\begin{equation}
+	{\it f}(x)
+\end{equation}
+
 
 \subsection{数学記号}
 
@@ -169,7 +222,8 @@ Texの書き方のサンプルをまとめる
 		$\times$ & \verb|\|times & 積，外積 & $\cdot$ & \verb|\|cdot & 積，内積 \\ \hline
 		$\otimes$ & \verb|\|otimes & 直積　& $\div$ & \verb|\|div & 商 \\ \hline
 		$\pm$ & \verb|\|pm & プラスマイナス & $\mp$ & \verb|\|mp & マイナスプラス \\ \hline
-		$*$ & $*$ & 畳み込み &  &  &  \\ \hline
+		$*$ & $*$ & 畳み込み & $\propto$ & \verb|\|propto & 比例 \\ \hline
+		$\equiv$ & $\verb|\|equiv$ & 定義 & & &  \\ \hline
 	\end{tabular}
 	\end{center}
 \end{table}
@@ -185,8 +239,42 @@ Texの書き方のサンプルをまとめる
 	\end{center}
 \end{table}
 
+\begin{table} [ h ]
+\caption{矢印}
+	\begin{center}
+	\begin{tabular}{| l | l | l || l | l | l |} \hline
+		記号 & コマンド & 意味 & 記号 & コマンド & 意味 \\ \hline
+		$\leftarrow$ & \verb|\|leftarrow & 左矢印 & $\Leftarrow$ & \verb|\|Leftarrow & 左矢印 \\ \hline
+		$\rightarrow$ & \verb|\|rightarrow & 右矢印 & $\Rightarrow$ & \verb|\|Rightarrow & 右矢印 \\ \hline
+		$\uparrow$ & \verb|\|uparrow & 上矢印 & $\Uparrow$ & \verb|\|Uparrow & 上矢印 \\ \hline
+		$\downarrow$ & \verb|\|downarrow & 下矢印 & $\Downarrow$ & \verb|\|Downarrow & 下矢印 \\ \hline
+	\end{tabular}
+	\end{center}
+\end{table}
+
 
 \section{図表}
+
+\subsection{図}
+
+\begin{lstlisting}
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[clip, height=8cm, bb=-20 0 568 278]{figure/sample.png}
+		\caption{sample}
+		\label{sample_png}
+	\end{center}
+\end{figure}
+\end{lstlisting}
+
+\begin{figure} [H]
+	\begin{center}
+		\includegraphics[clip, height=8cm, bb=-20 0 568 278]{figure/sample.png}
+		\caption{sample}
+		\label{sample_png}
+	\end{center}
+\end{figure}
+
 
 \subsection{表}
 
@@ -214,7 +302,6 @@ Texの書き方のサンプルをまとめる
 	\end{center}
 \end{table}
 
-
 \section{レイアウト}
 ...
 
@@ -241,6 +328,7 @@ Texの書き方のサンプルをまとめる
 		TeXテンプレート & \url{http://hooktail.org/computer/index.php?TeX%A5%C6%A5%F3%A5%D7%A5%EC%A1%BC%A5%C8} \\
 		LaTeXで表のセル内改行はtabularx環境を使うと楽 & \url{https://tgnx8810.wordpress.com/2014/11/29/LaTeXで表のセル内改行はtabularx環境を使うと楽/} \\
 		数学記号の表 & \url{https://ja.wikipedia.org/wiki/%E6%95%B0%E5%AD%A6%E8%A8%98%E5%8F%B7%E3%81%AE%E8%A1%A8} \\
+		max とか min の下に文字を入れる & \url{http://oh-real.jugem.jp/?eid=219} \\
 		\hline
 	\end{tabular}
 	\end{center}
