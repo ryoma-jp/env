@@ -1,7 +1,8 @@
 # Windows関連のメモ
 
 [VMware Workstation 15 Player](#anchor1)  
-[TeX](#anchor2)
+[TeX](#anchor2)  
+[Windows Subsystem for Linux](#anchor3)  
 
 <a id="anchor1"></a>
 
@@ -56,3 +57,11 @@ WindowsではVisual Studio Codeで環境設定するのがやりやすそう．
 参考：  
 https://qiita.com/hakaicode/items/98823e0ceab3f3f33cca  
 https://qiita.com/koara-local/items/e7a7a7d68a4f99a91ab1  
+
+<a id="anchor3"></a>
+
+## CUDA on WSL User Guide
+
+https://docs.nvidia.com/cuda/wsl-user-guide/index.html
+
+
