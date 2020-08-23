@@ -64,4 +64,10 @@ https://qiita.com/koara-local/items/e7a7a7d68a4f99a91ab1
 
 https://docs.nvidia.com/cuda/wsl-user-guide/index.html
 
+PowerShellからwslでLinuxにログイン後，突如，切断される場合がある．  
+WSLのサービスが落ちているようで，PowerShellを管理者権限で実行し，  
+<pre>
+net start LxssManager
+</pre>
+でサービスを起動すると，再度ログインできるようになる．
 
