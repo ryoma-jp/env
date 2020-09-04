@@ -1,10 +1,11 @@
 # Windows関連のメモ
 
-[VMware Workstation 15 Player](#anchor1)  
-[TeX](#anchor2)  
-[Windows Subsystem for Linux](#anchor3)  
+[VMware Workstation 15 Player](#anchor_vmware)  
+[TeX](#anchor_tex)  
+[PlantUML](#anchor_plantuml)  
+[Windows Subsystem for Linux](#anchor_wsl)  
 
-<a id="anchor1"></a>
+<a id="anchor_vmware"></a>
 
 ## VMware Workstation 15 Player
 
@@ -16,7 +17,7 @@
 
 ホストPC上で「VMnet8」が見えないのに，Ubuntuからインターネットアクセスできるのは謎．
 
-<a id="anchor2"></a>
+<a id="anchor_tex"></a>
 
 ## TeX
 
@@ -49,6 +50,8 @@ https://tex.stackexchange.com/questions/445086/error-installing-latest-version-o
 参考：  
 https://medemanabu.net/latex/windows-tex-live-texworks/
 
+<a id="anchor_plantuml"></a>
+
 ## PlantUML
 
 テキストでUMLを書くのはPlantUMLがよさそう．  
@@ -58,7 +61,7 @@ WindowsではVisual Studio Codeで環境設定するのがやりやすそう．
 https://qiita.com/hakaicode/items/98823e0ceab3f3f33cca  
 https://qiita.com/koara-local/items/e7a7a7d68a4f99a91ab1  
 
-<a id="anchor3"></a>
+<a id="anchor_wsl"></a>
 
 ## CUDA on WSL User Guide
 
