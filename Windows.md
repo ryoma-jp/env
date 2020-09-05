@@ -23,14 +23,28 @@
 
 ### インストール
 
-1. texlive2020.isoをダウンロード（ http://www.tug.org/texlive/acquire-iso.html ）  
-1. ダウンロードしたisoファイルをマウントしてinstall-tl-windows.batを実行  
+[2020/9/5更新]
+
+1. install-tl-windows.exe をダウンロード（ http://www.tug.org/texlive/acquire-netinstall.html ）
+1. ダウンロードした install-tl-windows.exe を実行してインストール
 ここで，"untar failed"と表示されインストールに失敗したが，MinGWのxzが悪さをしていたようで，環境変数PATHからMinGWを削除してインストール成功した  
-MinGWをインストールしていないPCならスムーズにインストールできるはず
+MinGWをインストールしていないPCならスムーズにインストールできるはず  
+1. plistings.sty を https://github.com/h-kitagawa/plistings.git から取得  
+1. C:\texlive\texmf-local\tex\latex\plistings/plistings.sty に配置  
+1. コマンドプロンプトを起動し，mktexlsr を実行  
+
+-----
+
+1. ~~texlive2020.isoをダウンロード（ http://www.tug.org/texlive/acquire-iso.html ）~~  
+1. ~~ダウンロードしたisoファイルをマウントしてinstall-tl-windows.batを実行~~  
+~~ここで，"untar failed"と表示されインストールに失敗したが，MinGWのxzが悪さをしていたようで，環境変数PATHからMinGWを削除してインストール成功した~~  
+~~MinGWをインストールしていないPCならスムーズにインストールできるはず~~  
 
 参考：  
 https://texwiki.texjp.org/?TeX%20Live  
-https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10
+https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10  
+https://mytexpert.osdn.jp/index.php?Listings#i1f895a0  
+https://github.com/h-kitagawa/plistings  
 
 ### 使い方
 
