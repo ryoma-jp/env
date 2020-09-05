@@ -160,7 +160,7 @@ $ docker pull plantuml/plantuml-server
 </pre>
 2. サーバを起動する
 <pre>
-$ docker run -d -p 8080:8080 plantuml/plantuml-server:tomcat
+$ docker run -d -p 8080:8080 plantuml/plantuml-server:latest
 </pre>
 3. ブラウザでlocalhostにアクセスする
 <pre>
