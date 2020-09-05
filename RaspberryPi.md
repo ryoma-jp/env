@@ -43,3 +43,14 @@ $HOME/.vimrc設定
 4. smbdとnmbdを再起動
 
 	   sudo systemctl restart smbd nmbd
+
+## Machine Learning
+
+### Object Detection
+
+* Reference1  
+	* https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
+	* scripts: data/ObjectDetection_Reference1
+		* see readme.txt
+
+
