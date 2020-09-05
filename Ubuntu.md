@@ -2,6 +2,10 @@
 
 ## 20.04 LTS
 
+[キーボードマップ](#keyboard_map)  
+
+<a id="keyboard_map"></a>
+
 ### キーボードマップ設定
 
 参考：https://qiita.com/vochicong/items/6452ac54bde56b0e0bb3
@@ -16,6 +20,14 @@ Command: setxkbmap jp
  setxkbmap jp  
  
 ## 18.04 LTS
+
+[ログイン画面が表示されない](#login_menu)  
+[samba](#samba)  
+[SSH](#ssh)  
+[Docker](#docker)  
+[PlantUML Server](#plantuml_server)  
+
+<a id="login_menu"></a>
 
 ### ログイン画面が表示されない
 
@@ -34,6 +46,8 @@ Waylandを無効にすると解決するかも
 	   WaylandEnable=false
 
 7. Recovery Menuの「resume」を実行してUbuntuをboot
+
+<a id="samba"></a>
 
 ### samba
 
@@ -64,6 +78,8 @@ Waylandを無効にすると解決するかも
 
 	   sudo systemctl restart smbd nmbd
 
+<a id="ssh"></a>
+
 ### ssh
 
 【手順】
@@ -83,6 +99,8 @@ Waylandを無効にすると解決するかも
 
 	
 2. 画面右上で，Japanese(Mozc)を選択  
+
+<a id="docker"></a>
 
 ### Docker
 
@@ -130,4 +148,25 @@ Waylandを無効にすると解決するかも
 		$ docker images
 		REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 		hello-world         latest              bf756fb1ae65        4 months ago        13.3kB
+
+
+<a id="plantuml_server"></a>
+
+### PlantUML Server
+
+1. Docker image をpullする
+<pre>
+$ docker pull plantuml/plantuml-server
+</pre>
+2. サーバを起動する
+<pre>
+$ docker run -d -p 8080:8080 plantuml/plantuml-server:tomcat
+</pre>
+3. ブラウザでlocalhostにアクセスする
+<pre>
+http://localhost:8080/
+</pre>
+
+
+参考： https://hub.docker.com/r/plantuml/plantuml-server/  
 
