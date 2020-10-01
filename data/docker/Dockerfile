@@ -20,6 +20,7 @@ RUN apt install -y libgl1-mesa-dev libsm6 libxrender1 libxext6
 RUN pip3 install --upgrade pip
 RUN pip3 install opencv-python
 RUN pip3 install scikit-image
+RUN pip3 install scipy --upgrade
 
 ENTRYPOINT /usr/local/bin/nvidia_entrypoint.sh
 
