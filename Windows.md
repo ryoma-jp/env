@@ -4,6 +4,7 @@
 [TeX](#anchor_tex)  
 [PlantUML](#anchor_plantuml)  
 [Windows Subsystem for Linux](#anchor_wsl)  
+[Anaconda](#anchor_anaconda)  
 
 <a id="anchor_vmware"></a>
 
@@ -87,4 +88,45 @@ WSLのサービスが落ちているようで，PowerShellを管理者権限で�
 net start LxssManager
 </pre>
 でサービスを起動すると，再度ログインできるようになる．
+
+<a id="anchor_anaconda"></a>
+
+## Anaconda
+
+下記からインストーラをダウンロードして，インストールする．
+
+https://www.anaconda.com/products/individual#Downloads
+
+Anaconda Top:  
+https://www.anaconda.com/
+
+### 仮想環境のデフォルトパスを変更する
+
+Windowsのシステム設定から，環境変数CONDA_ENVS_PATHに仮想環境のパスを記載する．  
+下記の例では「E:\work\Anaconda\envs」を追加．  
+
+<< Before CONDA_ENVS_PATH setting >>  
+<pre>
+(base) C:\Users\*****>conda config --show envs_dirs
+envs_dirs:
+  - C:\Users\*****\anaconda3\envs
+  - C:\Users\*****\.conda\envs
+  - C:\Users\*****\AppData\Local\conda\conda\envs
+
+</pre>
+
+　↓
+
+<< After CONDA_ENVS_PATH setting >>  
+<pre>
+(base) C:\Users\*****>conda config --show envs_dirs
+envs_dirs:
+  - E:\work\Anaconda\envs
+  - C:\Users\*****\anaconda3\envs
+  - C:\Users\*****\.conda\envs
+  - C:\Users\*****\AppData\Local\conda\conda\envs
+
+</pre>
+
+
 
