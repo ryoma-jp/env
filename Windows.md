@@ -41,6 +41,19 @@ MinGWをインストールしていないPCならスムーズにインストー�
 ~~ここで，"untar failed"と表示されインストールに失敗したが，MinGWのxzが悪さをしていたようで，環境変数PATHからMinGWを削除してインストール成功した~~  
 ~~MinGWをインストールしていないPCならスムーズにインストールできるはず~~  
 
+-----
+
+### 図形描画
+
+* Mathcha : https://www.mathcha.io/  
+ブラウザ上で数式，グラフ，図形描画等が可能なオンライン数式エディタ．  
+TeX形式でのエクスポート／インポートも可能．  
+エクスポートしたTeXスクリプトを実行する際にはdocumentclassへのdvipdfmxの指定と，tikzパッケージの宣言が必要．
+	<pre>
+	\documentclass[11pt,dvipdfmx,a4paper]{jsarticle}
+	\usepackage{tikz}
+	</pre>
+
 参考：  
 https://texwiki.texjp.org/?TeX%20Live  
 https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10  
