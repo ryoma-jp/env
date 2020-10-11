@@ -47,7 +47,7 @@ MinGWをインストールしていないPCならスムーズにインストー�
 
 * Mathcha : https://www.mathcha.io/  
 ブラウザ上で数式，グラフ，図形描画等が可能なオンライン数式エディタ．  
-TeX形式でのエクスポート／インポートも可能．  
+TeX形式でのエクスポート／インポートも可能（数式のインポートは可能だが，図形のインポートはできない模様）．  
 エクスポートしたTeXスクリプトを実行する際にはdocumentclassへのdvipdfmxの指定と，tikzパッケージの宣言が必要．
 	<pre>
 	\documentclass[11pt,dvipdfmx,a4paper]{jsarticle}
