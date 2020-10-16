@@ -102,6 +102,14 @@ net start LxssManager
 </pre>
 でサービスを起動すると，再度ログインできるようになる．
 
+LxssManagerが落ちていない場合もあるようで，
+<pre>
+net stop LxssManager
+net start LxssManager
+</pre>
+でサービスを再起動すると，再度ログインできるようになる．
+
+
 <a id="anchor_anaconda"></a>
 
 ## Anaconda
