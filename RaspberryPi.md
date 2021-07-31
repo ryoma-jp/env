@@ -15,6 +15,10 @@ $HOME/.vimrc設定
     set noexpandtab → タブ文字を入れる(expandtab指定で半角スペース4文字)
 </pre>
 
+## doxygen
+
+	$ sudo apt install doxygen graphviz
+
 ## samba
 
 【手順】
