@@ -48,6 +48,14 @@ $HOME/.vimrc設定
 
 	   sudo systemctl restart smbd nmbd
 
+## Python OpenCV
+
+下記コマンド実行後，/home/pi/.local/bin をPATHに追加する
+
+	$ sudo apt-get install libatlas-base-dev libjasper-dev libqt4-test
+	$ pip3 install --upgrade numpy
+	$ pip3 install opencv-python
+
 ## Machine Learning
 
 ### Object Detection
