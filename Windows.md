@@ -109,6 +109,67 @@ net start LxssManager
 </pre>
 でサービスを再起動すると，再度ログインできるようになる．
 
+## WSLでsambaを構築
+
+WSL(Ubuntu)上にsambaを構築する手順を示す．
+
+WSLではLinux側からWindowsのフォルダをアクセス(mount)可能であるが，ファイルシステムが異なる．  
+LinuxでマウントしたフォルダはNTFSでありext4ではなく，純Linuxとは厳密には異なる振る舞いをする．  
+ext4のファイルシステムへアクセスする為には，Linux側でsambaを起動し，Windowsからアクセスしに行く必要がある．
+
+環境構築手順は下記の通りで，Linux PCと同様の設定手順である．
+
+1. sambaのインストール
+
+	```
+	$ sudo apt install samba
+	```
+  
+1. smb.confの編集(homes属性を有効化)
+  
+	```
+	$ diff /etc/samba/smb.conf.org /etc/samba/smb.conf
+	175,177c175,177
+	< ;[homes]
+	< ;   comment = Home Directories
+	< ;   browseable = no
+	---
+	> [homes]
+	>    comment = Home Directories
+	>    browseable = no
+	181c181
+	< ;   read only = yes
+	---
+	>    read only = no
+	185c185
+	< ;   create mask = 0700
+	---
+	>    create mask = 0755
+	189c189
+	< ;   directory mask = 0700
+	---
+	>    directory mask = 0755
+	196c196
+	< ;   valid users = %S
+	---
+	>    valid users = %S
+	```
+    
+1. ユーザ追加
+
+	```shell
+	$ sudo smbpasswd -a <user name>
+	```
+
+1. サービスのリスタート
+
+	```shell
+	$ sudo service smbd restart
+	```
+
+1. Windowsからアクセス  
+```\\<eth0 ip address>\<user name>```へアクセス
+
 
 <a id="anchor_anaconda"></a>
 
